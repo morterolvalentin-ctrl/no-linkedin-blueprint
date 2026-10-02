@@ -105,7 +105,10 @@ Sheets capable de **lire et d'écrire** des cellules.
 > - **Brancher Google Sheets**, quinze minutes une fois pour toutes. Les
 >   étapes sont dans `~/.claude/terrain/mcp.md`.
 
-Écris le choix dans `~/.claude/terrain/config.json` :
+Crée le dossier de travail `~/terrain/` et écris le choix dans
+`~/terrain/config.json`. Tout ce qui appartient à l'utilisateur vit dans ce
+dossier (sa configuration, sa fiche ICP, ses exports), jamais dans
+`~/.claude/` :
 
 ```json
 {
@@ -117,9 +120,8 @@ Sheets capable de **lire et d'écrire** des cellules.
 }
 ```
 
-En mode CSV, `mode` vaut `"csv"`, `csv_etablissements` porte le chemin, et tu
-crées le dossier de travail. **Tu ne modifies jamais le CSV d'origine** : tu
-écris `etablissements-travail.csv` à côté, et c'est lui qui vit ensuite.
+En mode CSV, `mode` vaut `"csv"` et `csv_etablissements` porte le chemin. **Tu ne modifies jamais le CSV d'origine** : tu
+écris `~/terrain/etablissements-travail.csv`, et c'est lui qui vit ensuite.
 
 ## Phase 2 · lire le fichier
 
@@ -202,7 +204,7 @@ Hors cible
 **Arrêt.** Montre la fiche et le nombre de lignes que chaque niveau donnerait
 sur le fichier. Si A contient 4 lignes ou 600, le critère est mal réglé :
 dis-le et propose l'ajustement. Attends un accord explicite, puis enregistre la
-fiche dans `~/.claude/terrain/icp.md`.
+fiche dans `~/terrain/icp.md`.
 
 ## Phase 4 · repriorisation
 
@@ -233,7 +235,7 @@ la cible, ça se voit là, en trente secondes. Demande :
 > Regarde ces 50 lignes. Y en a-t-il une que tu aurais classée autrement ?
 
 S'il corrige, c'est la fiche ICP qui est fausse, pas la ligne : corrige la
-fiche, réécris `icp.md`, relance sur les mêmes 50. Quand il valide, applique à
+fiche, réécris `~/terrain/icp.md`, relance sur les mêmes 50. Quand il valide, applique à
 tout le fichier et donne le compte par niveau.
 
 En mode Sheets, écris par lots, en retrouvant chaque ligne par son

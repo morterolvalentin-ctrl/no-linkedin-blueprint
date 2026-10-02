@@ -36,8 +36,8 @@ for s in terrain-setup terrain-dedup terrain-appels; do
 done
 
 # Les références, les prompts et le script sont écrasés à chaque install : ce
-# sont des copies du dépôt. Ton config.json et ta fiche icp.md ne sont pas
-# touchés.
+# sont des copies du dépôt. Ta configuration et ta fiche ICP vivent dans
+# ~/terrain/ et ne sont jamais touchées.
 for pair in \
   "references/fichier-demo.md:fichier-demo.md" \
   "references/colonnes-de-suivi.md:colonnes-de-suivi.md" \

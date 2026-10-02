@@ -23,7 +23,7 @@ triggers:
 **Exécute cette skill dans la conversation.** Elle a deux arrêts où
 l'utilisateur valide.
 
-Lis d'abord `~/.claude/terrain/config.json` (le fichier, le mode de travail) et
+Lis d'abord `~/terrain/config.json` (le fichier, le mode de travail) et
 `~/.claude/terrain/cles-de-dedoublonnage.md` (les clés, les pièges, les exports
 par CRM). Si `config.json` n'existe pas, `/terrain-setup` n'a pas tourné :
 propose de le lancer, ou demande simplement le fichier et continue.

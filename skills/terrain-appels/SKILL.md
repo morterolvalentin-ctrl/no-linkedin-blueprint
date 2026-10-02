@@ -22,7 +22,7 @@ triggers:
 
 **Exécute cette skill dans la conversation.**
 
-Lis d'abord `~/.claude/terrain/config.json` et
+Lis d'abord `~/terrain/config.json` et
 `~/.claude/terrain/colonnes-de-suivi.md`. Les statuts, la mécanique de la case
 `Appelé` et les règles d'écriture y sont : applique-les à la lettre.
 

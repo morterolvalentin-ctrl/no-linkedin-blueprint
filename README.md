@@ -141,7 +141,9 @@ rm -rf ~/.claude/skills/terrain-setup ~/.claude/skills/terrain-dedup \
        ~/.claude/skills/terrain-appels ~/.claude/terrain
 ```
 
-Tes connexions restent branchées, ton Sheet et ton CRM restent à toi.
+Tes connexions restent branchées, ton Sheet et ton CRM restent à toi. Ton
+dossier de travail `~/terrain/` (configuration, fiche ICP, exports) n'est pas
+supprimé.
 
 ## Le blueprint précédent
 
