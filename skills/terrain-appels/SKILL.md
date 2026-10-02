@@ -106,8 +106,9 @@ Une ligne cochée **sans note** : ne devine pas. Liste-les à la fin et demande.
 - `Nb appels` : +1 ;
 - `Dernier appel` : la date du jour, `AAAA-MM-JJ` ;
 - `Statut d'appel` : la valeur classée ;
-- `Prochaine action` : une action et une date. `Rappeler` → le prochain jour
-  ouvré, à un autre créneau que celui de la note s'il est connu.
+- `Prochaine action` : une action et une date. `Rappeler` → si la note donne un moment
+  (« rappeler jeudi matin »), c'est ce moment-là, mot pour mot. Sinon le
+  prochain jour ouvré.
   `Rappel programmé` → la date dite. `Réponse positive` → le rendez-vous ou
   l'envoi promis. Vide pour `Réponse négative` et `Ne pas contacter` ;
 - `Notes` : inchangée si elle est déjà datée, sinon préfixée de la date. Tu
