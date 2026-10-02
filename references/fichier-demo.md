@@ -1,7 +1,7 @@
-# Le fichier de démonstration
+# Le fichier exemple
 
-**999 établissements du Loir-et-Cher (41), relevés le 28/09/2026.** C'est un
-vrai fichier Scalon, produit comme test pour une entreprise qui vend aux
+**1 128 établissements du Loir-et-Cher (41), relevés le 28/09/2026.** C'est un
+fichier exemple : un vrai fichier Scalon, produit comme test pour une entreprise qui vend aux
 garages indépendants, ceux que le métier appelle les **MRA** (mécaniciens
 réparateurs automobiles).
 
@@ -27,11 +27,11 @@ chaque établissement est regardé un par un.
 | Verdict | Établissements | Ce que ça veut dire |
 |---|---|---|
 | **Qualifié** | 229 | Garage de réparation en activité, atelier ouvert au public |
-| **Non qualifié** | 298 | Autre métier, ou pas d'atelier ouvert. Le motif est écrit |
+| **Non qualifié** | 427 | Autre métier, ou pas d'atelier ouvert. Le motif est écrit |
 | **Indéterminé** | 472 | Rien de public ne confirme l'activité réelle |
-| **Total** | **999** | |
+| **Total** | **1 128** | |
 
-Moins d'un établissement sur quatre est une cible. Les 770 autres sont le
+Un établissement sur cinq est une cible. Les 899 autres sont le
 temps que ton équipe perd aujourd'hui, au téléphone ou sur une carte.
 
 ## Pourquoi un code d'activité ne suffit pas
@@ -39,11 +39,11 @@ temps que ton équipe perd aujourd'hui, au téléphone ou sur une carte.
 Le code NAF des garages est le 45.20A, « entretien et réparation de véhicules
 automobiles légers ». Dans ce fichier :
 
-- **372** établissements portent ce code. **145** sont des garages qualifiés.
+- **402** établissements portent ce code. **145** sont des garages qualifiés.
 - **84** garages qualifiés sur 229 sont déclarés sous **un autre code**, dont
   63 en 45.11Z (commerce de voitures).
 
-Si tu filtres une base légale sur le 45.20A, tu appelles 227 établissements
+Si tu filtres une base légale sur le 45.20A, tu appelles 257 établissements
 qui ne sont pas des garages confirmés, et tu rates plus d'un tiers des vrais.
 
 ## Les colonnes qui font le travail
@@ -75,7 +75,7 @@ cible, estimée sur l'ensemble de son dossier.
 | | Score le plus bas | Score médian | Score le plus haut |
 |---|---|---|---|
 | Qualifié | 30 | 93 | 97 |
-| Non qualifié | 3 | 4 | 14 |
+| Non qualifié | 2 | 4 | 14 |
 
 158 des 229 qualifiés sont à 90 ou plus. Le score sert à **ordonner** les
 qualifiés entre eux : on appelle le 96 avant le 62.

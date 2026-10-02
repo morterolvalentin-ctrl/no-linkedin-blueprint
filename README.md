@@ -5,10 +5,10 @@ commerces, artisans, salons, cabinets. Avec Claude, un fichier
 d'établissements qualifiés, ton CRM et un téléphone.
 
 C'est la version publique de la façon dont on travaille chez
-[Scalon](https://scalon.fr), livrée avec **un vrai fichier de 999
+[Scalon](https://scalon.fr), livrée avec **un fichier exemple de 1 128
 établissements** pour tester.
 
-👉 **[Copier le fichier de démonstration](https://docs.google.com/spreadsheets/d/1B3-JFoqKLBg3WmGM3EKy5pjQ0Q6-nPBeKiDvNFQWbDE/copy)** · Google Sheets, un clic
+👉 **[Copier le fichier exemple](https://docs.google.com/spreadsheets/d/1B3-JFoqKLBg3WmGM3EKy5pjQ0Q6-nPBeKiDvNFQWbDE/copy)** · Google Sheets, un clic
 👉 **[Demander un échantillon sur ton marché](https://cal.com/valentin-morterol-ezc5qn/30min)** · 30 minutes avec Valentin
 
 ---
@@ -42,8 +42,10 @@ Puis, dans Claude Code :
 ```
 
 La skill te donne le lien du fichier, te demande à qui tu vends, et monte le
-reste. Elle sait travailler sur un simple export CSV : **aucune connexion n'est
-nécessaire pour un premier essai.**
+reste. Si Google Drive et Google Sheets sont branchés à Claude, elle travaille
+directement dans ta copie. Sinon tu télécharges le fichier en Excel ou en CSV
+et elle travaille dessus : **aucune connexion n'est nécessaire pour un premier
+essai.**
 
 **Sans terminal**, sur Claude web ou l'application de bureau : télécharge deux
 onglets du fichier en CSV, joins-les à la conversation et colle le
@@ -57,17 +59,17 @@ onglets du fichier en CSV, joins-les à la conversation et colle le
 > dépose les références dans `~/.claude/terrain/`. Il ne touche à rien d'autre
 > et n'installe aucune clé.
 
-## Le fichier de démonstration
+## Le fichier exemple
 
-999 établissements du Loir-et-Cher (41), relevés le 28/09/2026. C'est un test
+1 128 établissements du Loir-et-Cher (41), relevés le 28/09/2026. C'est un test
 réel, produit pour une entreprise qui vend aux **garages indépendants**, ceux
 que le métier appelle les MRA.
 
 | | |
 |---|---|
-| Établissements passés au crible | 999 |
+| Établissements passés au crible | 1 128 |
 | **Qualifiés** : garage en activité, atelier ouvert au public | **229** |
-| Non qualifiés, avec le motif écrit | 298 |
+| Non qualifiés, avec le motif écrit | 427 |
 | Indéterminés : rien de public ne confirme l'activité | 472 |
 | Garages indépendants (MRA) parmi les qualifiés | 164, dont 92 sans enseigne |
 
@@ -120,7 +122,7 @@ Aucun n'est nécessaire pour tester. Les commandes sont dans
 | Outil | Rôle | Coût par mois |
 |---|---|---|
 | Claude | Le moteur | 20 € |
-| [Google Sheets](mcp/README.md#1-google-sheets--le-fichier) | Le fichier, lu et écrit en direct | 0 € |
+| [Google Drive et Google Sheets](mcp/README.md#1-google-drive-et-google-sheets--le-fichier) | Le fichier, lu et écrit en direct | 0 € |
 | [Ton CRM](mcp/README.md#2-ton-crm--le-dédoublonnage) | HubSpot, Salesforce, Pipedrive… un export CSV suffit | ce que tu paies déjà |
 | [Notion](mcp/README.md#3-notion--le-crm-si-tu-nen-as-pas) | Le CRM, si tu n'en as pas | 10 € |
 | [Allo](mcp/README.md#4-allo--le-téléphone) | La file d'appels, le nom affiché au rappel | dès 18 $ |
@@ -150,6 +152,14 @@ Celui-ci traite des entreprises qui **ne sont pas** sur LinkedIn. Pour celles
 qui y sont, avec le script de cold call et le CRM Notion :
 [outbound-blueprint](https://github.com/morterolvalentin-ctrl/outbound-blueprint).
 
+## Ils nous font confiance
+
+<img src="assets/vroomly.png" alt="Vroomly" height="34">
+
+L'étude dont ce fichier est tiré, l'Observatoire des garages en France, a été
+reprise par [Le Journal de l'Automobile](https://journalauto.com/distribution/les-reseaux-constructeurs-ne-representent-que-163-des-garages-francais/)
+et par [J2R](https://j2rauto.com/reseaux/garages-7-ateliers-independants-sur-10-restent-sans-enseigne/).
+
 ## Qui a écrit ça
 
 <img src="https://scalon.fr/img/asset-84dc076345.webp" alt="Valentin Morterol" width="96" height="96" align="left" hspace="16">
@@ -166,6 +176,6 @@ On qualifie des marchés entiers pour les entreprises qui prospectent des
 
 ## Licence
 
-MIT pour les skills, les prompts et le script. Le fichier de démonstration
+MIT pour les skills, les prompts et le script. Le fichier exemple
 reste la propriété de Scalon : tu peux le copier pour tester ce blueprint, pas
 le revendre ni le republier.

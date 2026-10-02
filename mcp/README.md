@@ -1,8 +1,8 @@
 # Brancher les outils à Claude
 
 **Rien n'est obligatoire pour tester.** Le blueprint tourne sans aucune
-connexion : tu télécharges le fichier en `.csv`, Claude travaille dessus en
-local et te rend un fichier à réimporter. C'est le chemin le plus court pour
+connexion : tu télécharges le fichier en Excel ou en CSV, Claude travaille
+dessus en local et te rend un fichier à réimporter. C'est le chemin le plus court pour
 voir si ça te sert.
 
 Les connexions ci-dessous servent ensuite, quand tu veux que Claude écrive
@@ -12,14 +12,23 @@ Toutes les commandes se lancent dans un terminal, pas dans Claude.
 
 | Outil | Rôle | Sans lui | Coût |
 |---|---|---|---|
-| [Google Sheets](#1-google-sheets--le-fichier) | Claude lit et écrit ton fichier en direct | export et réimport CSV à la main | 0 € |
+| [Google Drive et Google Sheets](#1-google-drive-et-google-sheets--le-fichier) | Claude retrouve ton fichier, le lit et l'écrit en direct | téléchargement et réimport à la main | 0 € |
 | [Ton CRM](#2-ton-crm--le-dédoublonnage) | Lire tes comptes, pousser les établissements qualifiés | export CSV du CRM | selon ton CRM |
 | [Notion](#3-notion--le-crm-si-tu-nen-as-pas) | Le CRM, si tu n'en as pas | pas de CRM | 10 €/mois |
 | [Allo](#4-allo--le-téléphone) | La file d'appels et le nom affiché au rappel | tu composes à la main | dès 18 $/mois |
 
 ---
 
-## 1. Google Sheets · le fichier
+## 1. Google Drive et Google Sheets · le fichier
+
+**Google Drive**, pour que Claude retrouve ta copie du fichier sans que tu lui
+donnes l'URL. OAuth, Claude t'ouvre une page Google :
+
+```bash
+claude mcp add google-drive --transport http https://drivemcp.googleapis.com/mcp/v1
+```
+
+**Google Sheets**, pour qu'il lise et écrive les cellules :
 
 ```bash
 claude mcp add google-sheets \

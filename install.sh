@@ -67,14 +67,14 @@ fi
 echo
 bold "C'est installé. La suite :"
 echo
-echo "    1. Fais ta copie du fichier de démonstration (un clic) :"
+echo "    1. Fais ta copie du fichier exemple (un clic) :"
 echo "       https://docs.google.com/spreadsheets/d/1B3-JFoqKLBg3WmGM3EKy5pjQ0Q6-nPBeKiDvNFQWbDE/copy"
 echo
 echo "    2. Lance Claude, puis la skill :"
 echo "       claude"
 echo "       /terrain-setup"
 echo
-echo "Aucune connexion n'est nécessaire pour tester : la skill sait travailler"
-echo "sur un simple export CSV. Elle te proposera de brancher Google Sheets"
-echo "ensuite, si tu veux qu'elle écrive directement dans ton fichier."
+echo "Si Google Drive et Google Sheets sont branchés à Claude, la skill travaille"
+echo "directement dans ta copie. Sinon, télécharge le fichier en Excel ou en CSV :"
+echo "aucune connexion n'est nécessaire pour tester."
 echo

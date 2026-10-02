@@ -5,7 +5,7 @@ installation. Tu joins tes fichiers à la conversation, tu colles le prompt.
 
 **Avant de coller :**
 
-1. Fais ta copie du fichier de démonstration (lien dans
+1. Fais ta copie du fichier exemple (lien dans
    [`references/fichier-demo.md`](../references/fichier-demo.md)), ou ouvre ton
    propre fichier d'établissements.
 2. Télécharge deux onglets en CSV : **Établissements** et **Légende**

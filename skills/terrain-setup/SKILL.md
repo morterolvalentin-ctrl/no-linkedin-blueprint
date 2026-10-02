@@ -33,7 +33,7 @@ appels, et une file d'appels prête.
 
 | Fichier | À quoi il sert |
 |---|---|
-| `fichier-demo.md` | Ce que contient le fichier de démonstration, et le lien pour le copier |
+| `fichier-demo.md` | Ce que contient le fichier exemple, et le lien pour le copier |
 | `colonnes-de-suivi.md` | Les douze colonnes à ajouter, les statuts, les règles d'écriture |
 | `cles-de-dedoublonnage.md` | Les clés de rapprochement CRM et les exports par CRM |
 | `mcp.md` | Les commandes pour brancher Sheets, le CRM, Notion et Allo |
@@ -75,12 +75,12 @@ mémoire. Si l'un manque, dis-le et propose de relancer l'installation.
 Demande d'abord :
 
 > Sur quel fichier on travaille ?
-> - **le fichier de démonstration** (999 établissements du Loir-et-Cher,
+> - **le fichier exemple** (1 128 établissements du Loir-et-Cher,
 >   qualifiés pour quelqu'un qui vend aux garages indépendants)
 > - **ton échantillon Scalon**, si tu en as reçu un
 > - **un autre fichier d'établissements** que tu as déjà
 
-**Fichier de démonstration.** Lis `~/.claude/terrain/fichier-demo.md` et donne
+**Fichier exemple.** Lis `~/.claude/terrain/fichier-demo.md` et donne
 le lien de copie qu'il contient. La personne clique, obtient sa copie dans son
 Google Drive, et te donne l'URL de **sa copie**. Ne travaille jamais sur
 l'original : tu n'y as pas accès en écriture, et c'est voulu.
@@ -98,12 +98,19 @@ Sheets capable de **lire et d'écrire** des cellules.
 - **S'il n'y en a pas : propose le choix**, sans pousser.
 
 > Je n'ai pas d'accès Google Sheets ici. Deux possibilités :
-> - **Mode CSV, tout de suite.** Dans ta copie : Fichier → Télécharger → CSV,
->   une fois sur l'onglet Établissements, une fois sur l'onglet Légende.
->   Donne-moi les deux chemins. Je travaille en local et je te rends un fichier
->   à réimporter. Aucune connexion, cinq minutes.
-> - **Brancher Google Sheets**, quinze minutes une fois pour toutes. Les
->   étapes sont dans `~/.claude/terrain/mcp.md`.
+> - **Brancher Google Drive et Google Sheets à Claude**, quinze minutes une
+>   fois pour toutes. Les étapes sont dans `~/.claude/terrain/mcp.md`. Je
+>   travaille ensuite directement dans ta copie.
+> - **Télécharger le fichier, tout de suite.** Dans ta copie : Fichier →
+>   Télécharger → Microsoft Excel (.xlsx), un seul fichier avec tous les
+>   onglets. Ou en CSV, une fois sur l'onglet Établissements, une fois sur
+>   l'onglet Légende. Donne-moi le ou les chemins. Je travaille en local et je
+>   te rends un fichier à réimporter. Aucune connexion, cinq minutes.
+
+Si la personne donne un `.xlsx`, convertis d'abord chaque onglet utile en CSV
+dans le dossier de travail (un `.xlsx` est une archive zip de fichiers XML :
+Python standard suffit, `openpyxl` si elle est installée), en gardant les
+SIRET et les téléphones en texte. Le reste de la skill travaille sur ces CSV.
 
 Crée le dossier de travail `~/terrain/` et écris le choix dans
 `~/terrain/config.json`. Tout ce qui appartient à l'utilisateur vit dans ce
@@ -142,8 +149,8 @@ Sur un gros fichier, calcule avec un script plutôt que de lire toutes les
 lignes dans la conversation.
 
 Termine par une phrase qui dit ce que ces chiffres changent pour quelqu'un qui
-prospecte. Par exemple, sur le fichier de démonstration : 229 qualifiés sur
-999, donc trois appels sur quatre évités avant d'avoir décroché.
+prospecte. Par exemple, sur le fichier exemple : 229 qualifiés sur
+1 128, donc quatre appels sur cinq évités avant d'avoir décroché.
 
 ## Phase 3 · définir son ICP
 
@@ -286,7 +293,7 @@ Puis propose la suite, sans la lancer d'office :
 > - **`/terrain-appels`**, ce soir après ta première session : je lis les cases
 >   cochées et tes notes, je classe et je mets à jour.
 
-Si la personne travaillait sur le fichier de démonstration et que sa cible
+Si la personne travaillait sur le fichier exemple et que sa cible
 n'est pas le garage, dis-lui franchement que la machine est montée mais que le
 fichier n'est pas le sien, et donne le lien pour demander un échantillon sur
 son marché : https://cal.com/valentin-morterol-ezc5qn/30min
