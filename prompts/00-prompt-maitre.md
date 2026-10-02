@@ -8,15 +8,16 @@ installation. Tu joins tes fichiers à la conversation, tu colles le prompt.
 1. Fais ta copie du fichier exemple (lien dans
    [`references/fichier-demo.md`](../references/fichier-demo.md)), ou ouvre ton
    propre fichier d'établissements.
-2. Télécharge deux onglets en CSV : **Établissements** et **Légende**
-   (Fichier → Télécharger → Valeurs séparées par des virgules).
+2. Télécharge le fichier en Excel (Fichier → Télécharger → Microsoft Excel),
+   ou deux onglets en CSV : **Établissements** et **Légende**.
 3. Si tu as un CRM, exporte tes **entreprises** en CSV. Sinon, saute cette
    étape, le prompt s'en passe.
 4. Joins les fichiers à la conversation, puis colle ce qui suit.
 
 ```text
 Tu vas m'aider à prospecter des établissements locaux à partir d'un fichier
-qualifié. Je te joins : le CSV des établissements, le CSV de sa légende, et
+qualifié. Je te joins : le fichier des établissements avec sa légende (un
+classeur Excel, ou deux CSV), et
 (si je l'ai) un export CSV des entreprises de mon CRM.
 
 Règles, valables pour toute la conversation :
