@@ -8,7 +8,6 @@ C'est la version publique de la façon dont on travaille chez
 [Scalon](https://scalon.fr), livrée avec **un vrai fichier de 999
 établissements** pour tester.
 
-👉 **[Lire le blueprint](LIEN_NOTION_PUBLIC_A_COLLER_ICI)** · le guide complet, qui explique pourquoi chaque pièce existe
 👉 **[Copier le fichier de démonstration](https://docs.google.com/spreadsheets/d/1B3-JFoqKLBg3WmGM3EKy5pjQ0Q6-nPBeKiDvNFQWbDE/copy)** · Google Sheets, un clic
 👉 **[Demander un échantillon sur ton marché](https://cal.com/valentin-morterol-ezc5qn/30min)** · 30 minutes avec Valentin
 
