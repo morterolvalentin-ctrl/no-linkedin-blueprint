@@ -62,7 +62,7 @@ onglets du fichier en CSV, joins-les à la conversation et colle le
 
 ## Le fichier exemple
 
-100 établissements fictifs, en **données synthétiques** : la structure exacte
+100 établissements fictifs, en **données synthétiques** : la structure
 d'un fichier Scalon, aucune ligne réelle. Il ressemble à un fichier livré à une
 entreprise qui vend aux **garages indépendants**, ceux que le métier appelle
 les MRA : surtout des qualifiés, quelques non qualifiés et quelques

@@ -1,7 +1,7 @@
 # Le fichier exemple
 
 **100 établissements fictifs, en données synthétiques.** Le fichier a la
-structure exacte d'un fichier Scalon, colonne pour colonne, mais aucune ligne
+structure d'un fichier Scalon, mais aucune ligne
 n'est réelle : communes inventées, codes postaux en 99, téléphones pris dans la
 tranche réservée à la fiction, SIRET qui ne passent pas le contrôle légal,
 sites en `.example`.
