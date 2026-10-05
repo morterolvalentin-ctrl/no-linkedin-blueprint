@@ -74,7 +74,7 @@ dis-le : l'export CSV sera plus rapide.
 `<dossier_travail>/crm-demo.csv` à partir du fichier lui-même, pour imiter ce
 qu'est un vrai CRM de terrain :
 
-- prends au hasard la moitié des établissements qualifiés, 60 au plus (10
+- prends au hasard la moitié des établissements qualifiés, 60 au plus (35
   sur le fichier exemple) ;
 - pour la moitié d'entre eux, mets le téléphone au format national avec
   espaces (`02 54 55 22 22`) et pas de SIRET ;
@@ -88,8 +88,8 @@ qu'est un vrai CRM de terrain :
 
 Dis clairement que c'est une simulation, et ce qu'elle doit donner : les trois
 quarts des lignes reprises retrouvés par une clé forte, le dernier quart
-« à vérifier », le reste absent. Sur le fichier exemple : 7 ou 8 retrouvés,
-2 ou 3 à vérifier.
+« à vérifier », le reste absent. Sur le fichier exemple : environ 26 retrouvés
+et 9 à vérifier.
 
 ## Phase 2 · rapprocher
 

@@ -149,8 +149,9 @@ Sur un gros fichier, calcule avec un script plutôt que de lire toutes les
 lignes dans la conversation.
 
 Termine par une phrase qui dit ce que ces chiffres changent pour quelqu'un qui
-prospecte. Par exemple, sur le fichier exemple : 20 qualifiés sur
-100, donc quatre appels sur cinq évités avant d'avoir décroché.
+prospecte. Par exemple, sur le fichier exemple : 30 lignes sur 100 écartées
+ou à vérifier avant d'avoir décroché, et parmi les 70 qualifiés, tous ne sont
+pas des clients pour elle : c'est l'objet de la phase 3.
 
 ## Phase 3 · définir son ICP
 
@@ -234,7 +235,7 @@ Trois garde-fous :
   pas, tu ne le modifies pas, tu tries dessus.
 
 **Travaille d'abord sur 50 lignes**, prises parmi les qualifiés (toutes, si le
-fichier en compte moins de 50, comme le fichier exemple), et montre-les en
+fichier en compte moins de 50), et montre-les en
 tableau : nom, type, réseau, volume, priorité, raison.
 
 **Arrêt.** C'est le moment le plus important de la skill. Si tu as mal compris

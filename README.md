@@ -63,17 +63,21 @@ onglets du fichier en CSV, joins-les à la conversation et colle le
 ## Le fichier exemple
 
 100 établissements fictifs, en **données synthétiques** : la structure exacte
-d'un fichier Scalon, aucune ligne réelle. Ses proportions sont celles d'un test
-réel, un département entier passé au crible pour une entreprise qui vend aux
-**garages indépendants**, ceux que le métier appelle les MRA.
+d'un fichier Scalon, aucune ligne réelle. Il ressemble à un fichier livré à une
+entreprise qui vend aux **garages indépendants**, ceux que le métier appelle
+les MRA : surtout des qualifiés, quelques non qualifiés et quelques
+indéterminés pour voir les trois verdicts.
 
-| | Test réel | Fichier exemple |
-|---|---|---|
-| Établissements passés au crible | 1 128 | 100 |
-| **Qualifiés** : garage en activité, atelier ouvert au public | **229** | **20** |
-| Non qualifiés, avec le motif écrit | 427 | 38 |
-| Indéterminés : rien de public ne confirme l'activité | 472 | 42 |
-| Garages indépendants (MRA) parmi les qualifiés | 164, dont 92 sans enseigne | 14, dont 8 sans enseigne |
+| Dans le fichier exemple | |
+|---|---|
+| **Qualifiés** : garage en activité, atelier ouvert au public | **70** |
+| Non qualifiés, avec le motif écrit | 20 |
+| Indéterminés : rien de public ne confirme l'activité | 10 |
+| Garages indépendants (MRA) parmi les qualifiés | 50, dont 28 sans enseigne |
+
+Sur un marché brut, la proportion s'inverse. Notre test réel sur un département
+entier : 1 128 établissements déclarés dans l'automobile, **229 garages
+qualifiés**, dont 84 sous un autre code d'activité que celui des garages.
 
 Chaque ligne porte un `Statut`, une `Raison du statut`, un
 `Score Ciblage Scalon` de 0 à 100, un `Type d'établissement` et son
