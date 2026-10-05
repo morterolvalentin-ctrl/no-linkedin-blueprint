@@ -160,11 +160,13 @@ qui y sont, avec le script de cold call et le CRM Notion :
 
 ## Ils nous font confiance
 
-<img src="assets/vroomly.png" alt="Vroomly" height="34">
+<img src="assets/logo-vroomly.png" alt="Vroomly" height="64">
 
 Notre étude sur les garages, l'Observatoire des garages en France, a été
-reprise par [Le Journal de l'Automobile](https://journalauto.com/distribution/les-reseaux-constructeurs-ne-representent-que-163-des-garages-francais/)
-et par [J2R](https://j2rauto.com/reseaux/garages-7-ateliers-independants-sur-10-restent-sans-enseigne/).
+reprise par Le Journal de l'Automobile et par J2R.
+
+<a href="https://journalauto.com/distribution/les-reseaux-constructeurs-ne-representent-que-163-des-garages-francais/"><img src="assets/logo-journal-automobile.png" alt="Le Journal de l'Automobile" height="64"></a>
+<a href="https://j2rauto.com/reseaux/garages-7-ateliers-independants-sur-10-restent-sans-enseigne/"><img src="assets/logo-j2r.png" alt="J2R, le Journal de la Rechange et de la Réparation" height="64"></a>
 
 ## Qui a écrit ça
 

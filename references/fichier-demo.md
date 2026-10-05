@@ -115,6 +115,14 @@ sans enseigne décide seul.
 - `Zone` : rural, petite ville, périurbain, ville moyenne. 44 des 70 qualifiés
   sont en zone rurale.
 
+### `Nombre d'annonces VO`
+
+Le nombre de véhicules d'occasion que l'établissement propose à la vente en ce
+moment. Dans le fichier exemple : de 57 à 178 en concession, de 9 à 40 chez un
+agent de marque, et 20 des 50 MRA n'en vendent aucun. Selon ce que tu vends,
+c'est un critère d'ICP à part entière : un garage qui vend des VO achète de la
+préparation, du financement, de la garantie, de l'annonce.
+
 ## Les colonnes pour rapprocher avec ton CRM
 
 `SIRET` et `Téléphone` sont les deux clés. Le téléphone est présent sur les 70
