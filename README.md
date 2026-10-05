@@ -9,6 +9,7 @@ C'est la version publique de la façon dont on travaille chez
 établissements** (données synthétiques) pour tester.
 
 👉 **[Copier le fichier exemple](https://docs.google.com/spreadsheets/d/1uicRji1utNc1jKg2r9TpVsJRJj3yWVtMfRn8QPTYwiI/copy)** · Google Sheets, un clic
+👉 **[Lire le guide complet](https://productive-animal-316.notion.site/3ed358636d9b810fbd54cf0313031b59)** · la méthode pas à pas, sur Notion
 👉 **[Demander un échantillon sur ton marché](https://cal.com/valentin-morterol-ezc5qn/30min)** · 30 minutes avec Valentin
 
 ---
