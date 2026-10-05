@@ -74,19 +74,22 @@ dis-le : l'export CSV sera plus rapide.
 `<dossier_travail>/crm-demo.csv` à partir du fichier lui-même, pour imiter ce
 qu'est un vrai CRM de terrain :
 
-- prends 60 établissements au hasard parmi les qualifiés ;
-- pour 30 d'entre eux, mets le téléphone au format national avec espaces
-  (`02 54 55 22 22`) et pas de SIRET ;
-- pour 15, garde le SIRET et retire le téléphone ;
-- pour 15, ne garde que le nom en majuscules précédé de « SARL » et le code
-  postal ;
-- ajoute 40 lignes inventées qui ne sont pas dans le fichier (noms et numéros
-  fictifs, d'un autre département) ;
+- prends au hasard la moitié des établissements qualifiés, 60 au plus (10
+  sur le fichier exemple) ;
+- pour la moitié d'entre eux, mets le téléphone au format national avec
+  espaces (`02 54 55 22 22`) et pas de SIRET ;
+- pour un quart, garde le SIRET et retire le téléphone ;
+- pour le dernier quart, ne garde que le nom en majuscules précédé de
+  « SARL » et le code postal ;
+- ajoute des lignes inventées qui ne sont pas dans le fichier (noms et numéros
+  fictifs, d'un autre département), deux pour trois lignes reprises ;
 - colonnes : `Record ID`, `Company name`, `Phone Number`, `Postal Code`,
   `SIRET`, `Company owner`, avec deux prénoms de commerciaux fictifs.
 
-Dis clairement que c'est une simulation, et ce qu'elle doit donner : environ 45
-retrouvés par une clé forte, 15 « à vérifier », le reste absent.
+Dis clairement que c'est une simulation, et ce qu'elle doit donner : les trois
+quarts des lignes reprises retrouvés par une clé forte, le dernier quart
+« à vérifier », le reste absent. Sur le fichier exemple : 7 ou 8 retrouvés,
+2 ou 3 à vérifier.
 
 ## Phase 2 · rapprocher
 

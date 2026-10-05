@@ -75,8 +75,8 @@ mémoire. Si l'un manque, dis-le et propose de relancer l'installation.
 Demande d'abord :
 
 > Sur quel fichier on travaille ?
-> - **le fichier exemple** (1 128 établissements du Loir-et-Cher,
->   qualifiés pour quelqu'un qui vend aux garages indépendants)
+> - **le fichier exemple** (100 établissements fictifs, en données
+>   synthétiques, qualifiés pour quelqu'un qui vend aux garages indépendants)
 > - **ton échantillon Scalon**, si tu en as reçu un
 > - **un autre fichier d'établissements** que tu as déjà
 
@@ -149,8 +149,8 @@ Sur un gros fichier, calcule avec un script plutôt que de lire toutes les
 lignes dans la conversation.
 
 Termine par une phrase qui dit ce que ces chiffres changent pour quelqu'un qui
-prospecte. Par exemple, sur le fichier exemple : 229 qualifiés sur
-1 128, donc quatre appels sur cinq évités avant d'avoir décroché.
+prospecte. Par exemple, sur le fichier exemple : 20 qualifiés sur
+100, donc quatre appels sur cinq évités avant d'avoir décroché.
 
 ## Phase 3 · définir son ICP
 
@@ -209,8 +209,8 @@ Hors cible
 ```
 
 **Arrêt.** Montre la fiche et le nombre de lignes que chaque niveau donnerait
-sur le fichier. Si A contient 4 lignes ou 600, le critère est mal réglé :
-dis-le et propose l'ajustement. Attends un accord explicite, puis enregistre la
+sur le fichier. Si A contient moins de 2 % ou plus de la moitié des
+qualifiés, le critère est mal réglé : dis-le et propose l'ajustement. Attends un accord explicite, puis enregistre la
 fiche dans `~/terrain/icp.md`.
 
 ## Phase 4 · repriorisation
@@ -233,13 +233,14 @@ Trois garde-fous :
 - À priorité égale, c'est `Score Ciblage Scalon` qui ordonne. Tu ne le recopies
   pas, tu ne le modifies pas, tu tries dessus.
 
-**Travaille d'abord sur 50 lignes**, prises parmi les qualifiés, et montre-les
-en tableau : nom, type, réseau, volume, priorité, raison.
+**Travaille d'abord sur 50 lignes**, prises parmi les qualifiés (toutes, si le
+fichier en compte moins de 50, comme le fichier exemple), et montre-les en
+tableau : nom, type, réseau, volume, priorité, raison.
 
 **Arrêt.** C'est le moment le plus important de la skill. Si tu as mal compris
 la cible, ça se voit là, en trente secondes. Demande :
 
-> Regarde ces 50 lignes. Y en a-t-il une que tu aurais classée autrement ?
+> Regarde ces lignes. Y en a-t-il une que tu aurais classée autrement ?
 
 S'il corrige, c'est la fiche ICP qui est fausse, pas la ligne : corrige la
 fiche, réécris `~/terrain/icp.md`, relance sur les mêmes 50. Quand il valide, applique à
@@ -293,7 +294,8 @@ Puis propose la suite, sans la lancer d'office :
 > - **`/terrain-appels`**, ce soir après ta première session : je lis les cases
 >   cochées et tes notes, je classe et je mets à jour.
 
-Si la personne travaillait sur le fichier exemple et que sa cible
-n'est pas le garage, dis-lui franchement que la machine est montée mais que le
-fichier n'est pas le sien, et donne le lien pour demander un échantillon sur
-son marché : https://cal.com/valentin-morterol-ezc5qn/30min
+Si la personne travaillait sur le fichier exemple, dis-lui franchement que la
+machine est montée mais que ces établissements sont fictifs : leurs numéros ne
+mènent nulle part, il ne faut ni les appeler ni les importer dans un vrai CRM.
+Donne le lien pour demander un échantillon de 100 vrais établissements sur son
+marché : https://cal.com/valentin-morterol-ezc5qn/30min

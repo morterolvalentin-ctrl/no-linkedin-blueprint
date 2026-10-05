@@ -49,8 +49,8 @@ ARRÊT : je valide la fiche.
 et « Raison priorité » (une phrase qui cite le critère décisif, dans les mots
 du fichier). Une ligne « Non qualifié » est toujours Hors cible. Une ligne
 « Indéterminé » n'est jamais A, B ou C. Montre-moi d'abord 50 lignes
-qualifiées en tableau.
-ARRÊT : je valide les 50, puis tu appliques à tout le fichier.
+qualifiées en tableau (toutes, s'il y en a moins de 50).
+ARRÊT : je valide ces lignes, puis tu appliques à tout le fichier.
 
 ÉTAPE 4 · Dédoublonner. Si j'ai joint un export CRM, rapproche-le du fichier
 avec ces clés, dans cet ordre, en t'arrêtant à la première qui répond :

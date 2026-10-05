@@ -5,10 +5,10 @@ commerces, artisans, salons, cabinets. Avec Claude, un fichier
 d'établissements qualifiés, ton CRM et un téléphone.
 
 C'est la version publique de la façon dont on travaille chez
-[Scalon](https://scalon.fr), livrée avec **un fichier exemple de 1 128
-établissements** pour tester.
+[Scalon](https://scalon.fr), livrée avec **un fichier exemple de 100
+établissements** (données synthétiques) pour tester.
 
-👉 **[Copier le fichier exemple](https://docs.google.com/spreadsheets/d/1B3-JFoqKLBg3WmGM3EKy5pjQ0Q6-nPBeKiDvNFQWbDE/copy)** · Google Sheets, un clic
+👉 **[Copier le fichier exemple](https://docs.google.com/spreadsheets/d/1uicRji1utNc1jKg2r9TpVsJRJj3yWVtMfRn8QPTYwiI/copy)** · Google Sheets, un clic
 👉 **[Demander un échantillon sur ton marché](https://cal.com/valentin-morterol-ezc5qn/30min)** · 30 minutes avec Valentin
 
 ---
@@ -29,7 +29,8 @@ ton CRM et transforme en file d'appels.
 
 ## Tester en dix minutes, sans rien brancher
 
-**Avec Claude Code**
+**Avec Claude Code**, sur macOS ou Linux (sur Windows, passe par WSL ou par le
+prompt maître ci-dessous) :
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/morterolvalentin-ctrl/no-linkedin-blueprint/main/install.sh | bash
@@ -61,27 +62,28 @@ onglets du fichier en CSV, joins-les à la conversation et colle le
 
 ## Le fichier exemple
 
-1 128 établissements du Loir-et-Cher (41), relevés le 28/09/2026. C'est un test
-réel, produit pour une entreprise qui vend aux **garages indépendants**, ceux
-que le métier appelle les MRA.
+100 établissements fictifs, en **données synthétiques** : la structure exacte
+d'un fichier Scalon, aucune ligne réelle. Ses proportions sont celles d'un test
+réel, un département entier passé au crible pour une entreprise qui vend aux
+**garages indépendants**, ceux que le métier appelle les MRA.
 
-| | |
-|---|---|
-| Établissements passés au crible | 1 128 |
-| **Qualifiés** : garage en activité, atelier ouvert au public | **229** |
-| Non qualifiés, avec le motif écrit | 427 |
-| Indéterminés : rien de public ne confirme l'activité | 472 |
-| Garages indépendants (MRA) parmi les qualifiés | 164, dont 92 sans enseigne |
+| | Test réel | Fichier exemple |
+|---|---|---|
+| Établissements passés au crible | 1 128 | 100 |
+| **Qualifiés** : garage en activité, atelier ouvert au public | **229** | **20** |
+| Non qualifiés, avec le motif écrit | 427 | 38 |
+| Indéterminés : rien de public ne confirme l'activité | 472 | 42 |
+| Garages indépendants (MRA) parmi les qualifiés | 164, dont 92 sans enseigne | 14, dont 8 sans enseigne |
 
 Chaque ligne porte un `Statut`, une `Raison du statut`, un
 `Score Ciblage Scalon` de 0 à 100, un `Type d'établissement` et son
 `Réseau ou marque`. Le détail, et ce que ces chiffres disent des codes
 d'activité, est dans [`references/fichier-demo.md`](references/fichier-demo.md).
 
-Ta cible n'est pas le garage ? Le fichier te sert à monter la machine. Pour la
-faire tourner sur ton marché, il te faut un fichier sur ton marché :
+Le fichier exemple te sert à monter la machine. Pour la faire tourner sur de
+vrais établissements, il te faut un fichier sur ton marché :
 [30 minutes avec Valentin](https://cal.com/valentin-morterol-ezc5qn/30min),
-l'échantillon est gratuit.
+l'échantillon de 100 établissements est gratuit.
 
 ## Les trois skills
 
@@ -156,7 +158,7 @@ qui y sont, avec le script de cold call et le CRM Notion :
 
 <img src="assets/vroomly.png" alt="Vroomly" height="34">
 
-L'étude dont ce fichier est tiré, l'Observatoire des garages en France, a été
+Notre étude sur les garages, l'Observatoire des garages en France, a été
 reprise par [Le Journal de l'Automobile](https://journalauto.com/distribution/les-reseaux-constructeurs-ne-representent-que-163-des-garages-francais/)
 et par [J2R](https://j2rauto.com/reseaux/garages-7-ateliers-independants-sur-10-restent-sans-enseigne/).
 
@@ -176,6 +178,5 @@ On qualifie des marchés entiers pour les entreprises qui prospectent des
 
 ## Licence
 
-MIT pour les skills, les prompts et le script. Le fichier exemple
-reste la propriété de Scalon : tu peux le copier pour tester ce blueprint, pas
-le revendre ni le republier.
+MIT pour les skills, les prompts et le script. Le fichier exemple est en
+données synthétiques : copie-le et modifie-le librement.

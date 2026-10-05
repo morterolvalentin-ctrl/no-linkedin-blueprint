@@ -1,54 +1,58 @@
 # Le fichier exemple
 
-**1 128 établissements du Loir-et-Cher (41), relevés le 28/09/2026.** C'est un
-fichier exemple : un vrai fichier Scalon, produit comme test pour une entreprise qui vend aux
-garages indépendants, ceux que le métier appelle les **MRA** (mécaniciens
-réparateurs automobiles).
+**100 établissements fictifs, en données synthétiques.** Le fichier a la
+structure exacte d'un fichier Scalon, colonne pour colonne, mais aucune ligne
+n'est réelle : communes inventées, codes postaux en 99, téléphones pris dans la
+tranche réservée à la fiction, SIRET qui ne passent pas le contrôle légal,
+sites en `.example`.
 
-👉 **[Faire ta copie du fichier](https://docs.google.com/spreadsheets/d/1B3-JFoqKLBg3WmGM3EKy5pjQ0Q6-nPBeKiDvNFQWbDE/copy)**
+👉 **[Faire ta copie du fichier](https://docs.google.com/spreadsheets/d/1uicRji1utNc1jKg2r9TpVsJRJj3yWVtMfRn8QPTYwiI/copy)**
 (Google Sheets, un clic, la copie t'appartient)
 
-Le fichier ne vaut que pour cette cible. Si tu vends aux restaurants, aux
-salons de coiffure ou aux artisans du bâtiment, sers-toi de lui pour monter ta
-machine, puis demande ton propre échantillon sur ton marché :
-[30 minutes avec Valentin](https://cal.com/valentin-morterol-ezc5qn/30min).
+Il sert à monter la machine et à voir tourner les trois skills. Pour la faire
+tourner sur de vrais établissements, il te faut un fichier sur ton marché :
+[30 minutes avec Valentin](https://cal.com/valentin-morterol-ezc5qn/30min),
+l'échantillon de 100 établissements est gratuit.
 
 ---
 
-## La question posée au fichier
+## D'où viennent ses proportions
 
-> Dans le Loir-et-Cher, quels établissements sont réellement des garages de
+Le fichier exemple reproduit, en petit, un test réel : un département entier
+passé au crible pour une entreprise qui vend aux garages indépendants, ceux
+que le métier appelle les **MRA** (mécaniciens réparateurs automobiles). La
+question posée :
+
+> Dans ce département, quels établissements sont réellement des garages de
 > réparation automobile, avec un atelier ouvert au public ?
 
-Le point de départ est large, volontairement : tout ce qui, dans le
-département, est déclaré ou se présente comme une activité automobile. Puis
-chaque établissement est regardé un par un.
+| Verdict | Test réel | Fichier exemple | Ce que ça veut dire |
+|---|---|---|---|
+| **Qualifié** | 229 | 20 | Garage de réparation en activité, atelier ouvert au public |
+| **Non qualifié** | 427 | 38 | Autre métier, ou pas d'atelier ouvert. Le motif est écrit |
+| **Indéterminé** | 472 | 42 | Rien de public ne confirme l'activité réelle |
+| **Total** | **1 128** | **100** | |
 
-| Verdict | Établissements | Ce que ça veut dire |
-|---|---|---|
-| **Qualifié** | 229 | Garage de réparation en activité, atelier ouvert au public |
-| **Non qualifié** | 427 | Autre métier, ou pas d'atelier ouvert. Le motif est écrit |
-| **Indéterminé** | 472 | Rien de public ne confirme l'activité réelle |
-| **Total** | **1 128** | |
-
-Un établissement sur cinq est une cible. Les 899 autres sont le
-temps que ton équipe perd aujourd'hui, au téléphone ou sur une carte.
+Un établissement sur cinq est une cible, dans le test comme dans l'exemple.
 
 ## Pourquoi un code d'activité ne suffit pas
 
 Le code NAF des garages est le 45.20A, « entretien et réparation de véhicules
-automobiles légers ». Dans ce fichier :
+automobiles légers ».
 
-- **402** établissements portent ce code. **145** sont des garages qualifiés.
-- **84** garages qualifiés sur 229 sont déclarés sous **un autre code**, dont
-  63 en 45.11Z (commerce de voitures).
+| | Test réel | Fichier exemple |
+|---|---|---|
+| Établissements qui portent le 45.20A | 402 | 36 |
+| dont garages qualifiés | 145 | 13 |
+| Garages qualifiés déclarés sous un autre code | 84 sur 229 | 7 sur 20 |
 
-Si tu filtres une base légale sur le 45.20A, tu appelles 257 établissements
-qui ne sont pas des garages confirmés, et tu rates plus d'un tiers des vrais.
+Si tu filtres une base légale sur le 45.20A, tu appelles une majorité
+d'établissements qui ne sont pas des garages confirmés, et tu rates plus d'un
+tiers des vrais.
 
 ## Les colonnes qui font le travail
 
-L'onglet **Légende** du fichier définit chaque colonne. Les cinq qui comptent
+L'onglet **Légende** du fichier définit chaque colonne. Celles qui comptent
 pour prospecter :
 
 ### `Statut` et `Raison du statut`
@@ -59,40 +63,36 @@ peux contester un verdict ligne par ligne.
 
 | Statut | Exemples de raisons, telles qu'écrites dans le fichier |
 |---|---|
-| Qualifié | « Garage indépendant, mécanique, carrosserie et tôlerie » |
-| Qualifié | « Garage AD, entretien et réparation toutes marques » |
+| Qualifié | « Garage indépendant, mécanique et carrosserie toutes marques, atelier ouvert, avis récents. » |
+| Qualifié | « Garage AD, entretien et réparation toutes marques, atelier ouvert. » |
 | Non qualifié | « Centre de contrôle technique, pas un garage de réparation. » |
-| Non qualifié | « Carrosserie seule, pas de mécanique » |
-| Non qualifié | « Mandataire automobile, vente de véhicules sans atelier » |
-| Indéterminé | « Connu du seul registre : aucune fiche publique ne confirme l'activité » |
+| Non qualifié | « Carrosserie seule, pas de mécanique. » |
+| Non qualifié | « Mandataire automobile, vente de véhicules sans atelier. » |
+| Indéterminé | « Connu du seul registre : aucune fiche publique ne confirme l'activité. » |
 | Indéterminé | « Aucun avis depuis plus de 3 ans : fermeture probable. » |
 
 ### `Score Ciblage Scalon`
 
 Un entier de 0 à 100 : la probabilité que l'établissement soit vraiment dans la
-cible, estimée sur l'ensemble de son dossier.
+cible, estimée sur l'ensemble de son dossier. Dans le fichier exemple, les
+qualifiés vont de 62 à 97 (médiane 93), les non qualifiés de 2 à 14.
 
-| | Score le plus bas | Score médian | Score le plus haut |
-|---|---|---|---|
-| Qualifié | 30 | 93 | 97 |
-| Non qualifié | 2 | 4 | 14 |
-
-158 des 229 qualifiés sont à 90 ou plus. Le score sert à **ordonner** les
-qualifiés entre eux : on appelle le 96 avant le 62.
+Le score sert à **ordonner** les qualifiés entre eux : on appelle le 96 avant
+le 62.
 
 ### `Type d'établissement`
 
-| Type | Nombre | Qui c'est |
+| Type | Dans le fichier exemple | Qui c'est |
 |---|---|---|
-| **Garage indépendant (MRA)** | 164 | L'atelier indépendant, sous enseigne de réseau ou non |
-| **Agent de marque** | 38 | Le réseau secondaire d'un constructeur |
-| **Concession** | 27 | Le réseau primaire, avec atelier |
+| **Garage indépendant (MRA)** | 14 | L'atelier indépendant, sous enseigne de réseau ou non |
+| **Agent de marque** | 3 | Le réseau secondaire d'un constructeur |
+| **Concession** | 3 | Le réseau primaire, avec atelier |
 
 ### `Réseau ou marque`
 
-L'enseigne affichée (AD, Motrio, Autoprimo, Top Garage, Eurorepar, Precisium…)
-ou la marque représentée. Sur les 164 MRA, **92 n'affichent aucune enseigne**
-et 72 appartiennent à un réseau.
+L'enseigne affichée (AD, Motrio, Top Garage, Eurorepar, Precisium…) ou la
+marque représentée. Sur les 14 MRA du fichier exemple, **8 n'affichent aucune
+enseigne** et 6 appartiennent à un réseau. Dans le test réel : 92 sur 164.
 
 Pour quelqu'un qui vend aux garages, cette colonne change tout. Un garage sous
 enseigne achète déjà, en partie, par la centrale de son réseau. Un indépendant
@@ -101,14 +101,16 @@ sans enseigne décide seul.
 ### `Volume d'activité` et `Zone`
 
 - `Volume d'activité` : Faible, Moyen ou Fort, comparé aux garages de France.
-  Sur les 229 qualifiés : 63 Fort, 103 Moyen, 62 Faible.
-- `Zone` : rural, petite ville, périurbain, ville moyenne. 151 des 229
-  qualifiés sont en zone rurale.
+  Sur les 20 qualifiés : 6 Fort, 9 Moyen, 5 Faible.
+- `Zone` : rural, petite ville, périurbain, ville moyenne. 14 des 20 qualifiés
+  sont en zone rurale.
 
 ## Les colonnes pour rapprocher avec ton CRM
 
-`SIRET` et `Téléphone` sont les deux clés. Le téléphone est présent sur 226 des
-229 qualifiés, au format international (`+33…`). Voir
+`SIRET` et `Téléphone` sont les deux clés. Le téléphone est présent sur les 20
+qualifiés, au format international (`+33…`). Les garages sous enseigne ont pour
+site une page du site de leur réseau : c'est le piège du domaine partagé,
+visible dans le fichier. Voir
 [`cles-de-dedoublonnage.md`](cles-de-dedoublonnage.md).
 
 ## Ce que le fichier ne dit pas
@@ -119,3 +121,6 @@ patron a besoin de ton produit cette semaine : ça, c'est ton appel.
 Et un `Indéterminé` n'est pas un `Non qualifié`. C'est une ligne sur laquelle
 rien de public ne permet de trancher. On ne l'appelle pas en premier, on ne la
 supprime pas non plus.
+
+Les numéros du fichier exemple ne mènent nulle part : ne les appelle pas, et ne
+les importe pas dans ton vrai CRM.

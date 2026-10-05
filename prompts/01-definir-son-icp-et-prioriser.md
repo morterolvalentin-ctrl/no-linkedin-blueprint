@@ -19,8 +19,8 @@ Ma zone : [TOUT LE FICHIER, OU UNE PARTIE]
    fichier. Quatre niveaux : A (on appelle en premier), B, C, Hors cible, plus
    « À vérifier » pour les lignes dont le verdict est indéterminé et qui ont
    un téléphone. Pour chaque niveau : les colonnes, les valeurs retenues, et
-   le nombre de lignes que ça donne. Si A contient moins de 10 lignes ou plus
-   de la moitié des qualifiés, dis-le et propose un ajustement.
+   le nombre de lignes que ça donne. Si A contient moins de 2 % ou plus de la
+   moitié des qualifiés, dis-le et propose un ajustement.
 
    Arrête-toi et attends que je valide.
 
@@ -32,10 +32,10 @@ Ma zone : [TOUT LE FICHIER, OU UNE PARTIE]
    un établissement écarté avec un motif.
    Une ligne « Indéterminé » n'est jamais A, B ou C.
 
-3. Montre-moi d'abord 50 lignes qualifiées en tableau (nom, type, réseau,
-   volume, priorité, raison) et demande-moi laquelle j'aurais classée
+3. Montre-moi d'abord 50 lignes qualifiées (toutes, s'il y en a moins de 50)
+   en tableau (nom, type, réseau, volume, priorité, raison) et demande-moi laquelle j'aurais classée
    autrement. Si j'en corrige une, c'est la fiche qui est fausse : corrige-la
-   et recommence sur les mêmes 50.
+   et recommence sur les mêmes lignes.
 
 4. Quand je valide, applique à tout le fichier, donne le compte par niveau, et
    rends-moi le CSV.

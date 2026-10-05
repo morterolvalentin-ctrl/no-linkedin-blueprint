@@ -67,8 +67,8 @@ fi
 echo
 bold "C'est installé. La suite :"
 echo
-echo "    1. Fais ta copie du fichier exemple (un clic) :"
-echo "       https://docs.google.com/spreadsheets/d/1B3-JFoqKLBg3WmGM3EKy5pjQ0Q6-nPBeKiDvNFQWbDE/copy"
+echo "    1. Fais ta copie du fichier exemple (100 établissements fictifs, un clic) :"
+echo "       https://docs.google.com/spreadsheets/d/1uicRji1utNc1jKg2r9TpVsJRJj3yWVtMfRn8QPTYwiI/copy"
 echo
 echo "    2. Lance Claude, puis la skill :"
 echo "       claude"
